@@ -25,9 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Suspense>
-          <GitHubBanner />
+          
           <RefineKbarProvider>
-            <DevtoolsProvider>
+            
               <Refine
                 routerProvider={routerProvider}
                 dataProvider={dataProvider}
@@ -39,9 +39,9 @@ export default function RootLayout({
                 }}
               >
                 {children}
-                <RefineKbar />
+                
               </Refine>
-            </DevtoolsProvider>
+            
           </RefineKbarProvider>
         </Suspense>
       </body>
